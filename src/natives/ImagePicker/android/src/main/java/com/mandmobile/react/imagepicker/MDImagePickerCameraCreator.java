@@ -1,9 +1,9 @@
 package com.mandmobile.react.imagepicker;
 
 import android.app.Activity;
-import android.support.annotation.FloatRange;
-import android.support.annotation.StyleRes;
-import android.support.v4.app.Fragment;
+import androidx.annotation.FloatRange;
+import androidx.annotation.StyleRes;
+import androidx.fragment.app.Fragment;
 
 import com.mandmobile.react.imagepicker.activity.MDImagePickerActivity;
 import com.mandmobile.react.imagepicker.config.MDImagePickerConfig;

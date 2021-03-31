@@ -3,9 +3,9 @@ package com.mandmobile.react.imagepicker.util;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.media.ExifInterface;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.exifinterface.media.ExifInterface;
 import android.util.Base64;
 
 import com.mandmobile.react.imagepicker.entity.MDLocalImage;

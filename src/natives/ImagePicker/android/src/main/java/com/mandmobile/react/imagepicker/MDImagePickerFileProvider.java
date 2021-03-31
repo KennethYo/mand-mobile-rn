@@ -1,6 +1,6 @@
 package com.mandmobile.react.imagepicker;
 
-import android.support.v4.content.FileProvider;
+import androidx.core.content.FileProvider;
 
 /**
  * Created by youzicong.

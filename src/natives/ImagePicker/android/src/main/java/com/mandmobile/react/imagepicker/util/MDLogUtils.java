@@ -1,6 +1,6 @@
 package com.mandmobile.react.imagepicker.util;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import com.mandmobile.react.imagepicker.BuildConfig;

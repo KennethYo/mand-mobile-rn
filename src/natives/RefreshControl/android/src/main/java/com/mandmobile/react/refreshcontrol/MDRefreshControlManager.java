@@ -1,6 +1,6 @@
 package com.mandmobile.react.refreshcontrol;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.facebook.react.common.MapBuilder;
 import com.facebook.react.uimanager.ThemedReactContext;

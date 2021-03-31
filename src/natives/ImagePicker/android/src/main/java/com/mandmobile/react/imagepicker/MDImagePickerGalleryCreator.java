@@ -1,6 +1,6 @@
 package com.mandmobile.react.imagepicker;
 
-import android.support.annotation.IntRange;
+import androidx.annotation.IntRange;
 
 import com.mandmobile.react.imagepicker.config.MDImageConstant;
 import com.mandmobile.react.imagepicker.entity.MDLocalImage;

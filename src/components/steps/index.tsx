@@ -260,6 +260,7 @@ export default class MDSteps extends React.Component<
     Animated.timing(this.animatedValues[_current], {
       toValue: toValue * diff,
       duration: !transition || !isAddStep ? 0 : TRANSITION_DURATION,
+      useNativeDriver: false
     }).start(() => {
       this.startAnimByIndex(
         next,
@@ -315,7 +316,7 @@ export default class MDSteps extends React.Component<
     );
   }
 
-  private genBarWrapperStyle () {
+  private genBarWrapperStyle(): any {
     const _styles = this.props.styles || {};
     const _v = this.isVertical();
 
@@ -382,7 +383,7 @@ export default class MDSteps extends React.Component<
     if (titleRender) {
       const ele: React.ReactNode = titleRender(this._getStatus(index, current), index);
       if (ele && React.isValidElement(ele)) {
-        const _flatStyle = Object.assign(
+        const _flatStyle: any = Object.assign(
           { position: 'absolute' },
           !_isVertical ? { top: HORIZONTAL_TOP } : null,
           _isVertical ? { left: VERTICAL_LEFT } : null
@@ -396,7 +397,7 @@ export default class MDSteps extends React.Component<
     return title ? <Text style={_titleStyle}>{title}</Text> : null;
   }
 
-  private genTitleStyle (index: number) {
+  private genTitleStyle(index: number): any {
     const { current } = this.state;
     const _styles = this.props.styles || {};
     const _v = this.isVertical();
@@ -419,7 +420,7 @@ export default class MDSteps extends React.Component<
     if (briefRender) {
       const ele: React.ReactNode = briefRender(this._getStatus(index, current), index);
       if (ele && React.isValidElement(ele)) {
-        const _flatStyle = Object.assign(
+        const _flatStyle: any = Object.assign(
           {
             position: 'absolute',
             top: _isVertical ? VERTICAL_GAP : VERTICAL_GAP + HORIZONTAL_TOP,

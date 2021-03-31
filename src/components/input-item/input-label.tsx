@@ -105,10 +105,12 @@ export default class MDInputLabel extends React.Component<
       Animated.timing(top, {
         toValue: Number((small as TextStyle).top),
         duration,
+        useNativeDriver: false
       }),
       Animated.timing(fontSize, {
         toValue: (small as TextStyle).fontSize!,
         duration,
+        useNativeDriver: false
       }),
     ]).start();
   }
@@ -121,10 +123,12 @@ export default class MDInputLabel extends React.Component<
       Animated.timing(top, {
         toValue: Number((large as TextStyle).top),
         duration,
+        useNativeDriver: false
       }),
       Animated.timing(fontSize, {
         toValue: (large as TextStyle).fontSize!,
         duration,
+        useNativeDriver: false
       }),
     ]).start();
   }

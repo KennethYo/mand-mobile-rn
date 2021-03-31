@@ -197,6 +197,7 @@ export default class MDTabBar extends React.Component<
         {
           toValue: this.leftArr[index] + 3, // inkPos
           duration: 300, // 让动画持续一段时间
+          useNativeDriver: false
         }
       ).start();
     }
@@ -221,6 +222,7 @@ export default class MDTabBar extends React.Component<
         {
           toValue: this.leftArr[curIndex || 0] + 3, // inkPos
           duration: 100, // 让动画持续一段时间
+          useNativeDriver: false
         }
       ).start();
     }

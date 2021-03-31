@@ -3,8 +3,8 @@ package com.mandmobile.react.imagepicker.util;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.AttrRes;
-import android.support.annotation.NonNull;
+import androidx.annotation.AttrRes;
+import androidx.annotation.NonNull;
 import android.util.TypedValue;
 
 /**

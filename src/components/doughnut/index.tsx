@@ -3,13 +3,13 @@ import * as React from 'react';
 import * as RART from 'react-art';
 import {
   Animated,
-  ART,
   Easing,
   EasingFunction,
   Platform,
   View,
 } from 'react-native';
 import Doughnut from './doughnut';
+import * as ART from '@react-native-community/art';
 
 // @ts-ignore
 const { Surface } = Platform.OS === 'web' ? RART : ART;
@@ -119,6 +119,7 @@ export default class MDDoughnut extends React.Component<
           duration: this.animateDuration(index, values.length),
           easing: this.animateType(),
           toValue: values[index],
+          useNativeDriver: false
         }).start(() => {
           setTimeout(() => {
             arcWalker(++index);

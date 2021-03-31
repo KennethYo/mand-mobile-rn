@@ -105,6 +105,7 @@ export default class MDProgress extends React.Component<
         10 *
         Math.abs(this.props.progress - prevProps.progress) *
         this.props.itemWidth,
+      useNativeDriver: false,
     }).start();
   }
 }

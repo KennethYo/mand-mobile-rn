@@ -14,6 +14,7 @@ import com.mandmobile.MDNumberKeyboardPackage;
 import com.mandmobile.react.imagepicker.MDImagePickerPackage;
 import com.mandmobile.react.refreshcontrol.MDRefreshControlPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
+import com.reactnativecommunity.art.ARTPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
 import java.util.Arrays;
@@ -31,13 +32,14 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-            new RNGestureHandlerPackage(),
-          new MDImagePickerPackage(),
-          new MDNumberKeyboardPackage(),
-          new MDRefreshControlPackage(),
+                    new RNGestureHandlerPackage(),
+                    new MDImagePickerPackage(),
+                    new MDNumberKeyboardPackage(),
+                    new MDRefreshControlPackage(),
                     new VectorIconsPackage(),
                     new SvgPackage(),
-                    new LinearGradientPackage()
+                    new LinearGradientPackage(),
+                    new ARTPackage()
             );
         }
 
@@ -56,7 +58,5 @@ public class MainApplication extends Application implements ReactApplication {
     public void onCreate() {
         super.onCreate();
         SoLoader.init(this, /* native exopackage */ false);
-        // 处理 haul delta 包 和 rn 不兼容问题
-        new DevInternalSettings(this,null).setBundleDeltasEnabled(false);
     }
 }

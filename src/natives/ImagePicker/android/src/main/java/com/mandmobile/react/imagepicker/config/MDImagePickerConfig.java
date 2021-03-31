@@ -1,6 +1,6 @@
 package com.mandmobile.react.imagepicker.config;
 
-import android.support.annotation.StyleRes;
+import androidx.annotation.StyleRes;
 
 import com.mandmobile.react.imagepicker.R;
 import com.mandmobile.react.imagepicker.entity.MDLocalImage;

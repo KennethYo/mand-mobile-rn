@@ -44,6 +44,7 @@ export default class MDRefreshControl extends React.Component<
     if (Platform.OS === 'web') {
       return null;
     }
+    // @ts-ignore
     return <NativeRefreshControl {...this.props} ref={(ref: any) => this.refreshControl = ref} />;
   }
 }

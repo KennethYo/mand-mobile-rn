@@ -130,6 +130,7 @@ export default class MDPopup extends React.Component<
       Animated.timing(this.state.animTime, {
         toValue: 0,
         duration: 250,
+        useNativeDriver: false
       }).start(() => {
         this.setState({
           isVisible: show,
@@ -146,6 +147,7 @@ export default class MDPopup extends React.Component<
             toValue: 1,
             easing: Easing.bezier(0.215, 0.61, 0.355, 1),
             duration: 300,
+            useNativeDriver: false
           }).start();
         }
       );
